@@ -1,12 +1,12 @@
-#A palindromic number reads the same both ways. The largest palindrome made from the product #of two 2-digit numbers is 9009 = 91 × 99.
+sumList = set()
 
-#Find the largest palindrome made from the product of two 3-digit numbers.
-
-import sys
-import os
-
-for x in range 999:
-	for y in range 999:
+for x in range(0,1000):
+	for y in range(0,1000):
 		product = x * y
-		if product not in sumDict:
-			sumDict.append
+		if product not in sumList:
+			sumList.add(product)
+			if product == max(sumList):
+				forward = str(product)
+				reverse = forward[::-1]
+				if forward == reverse:
+					print(x,y,product)
