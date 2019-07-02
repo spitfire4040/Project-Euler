@@ -17,20 +17,8 @@ def find_primes(end):
 				flag = True
 		if flag == False:
 			temp.append(x)
-			print(x)
 
 		x += 1
-
-		
-
-
-			
-
-
-
-
-
-
 
 def main(argv):
 	if len(argv) < 2 or len(argv) > 2:
@@ -40,8 +28,6 @@ def main(argv):
 		end = sys.argv[1]
 	find_primes(end)
 	print(temp)
-
-
 
 if __name__ == '__main__':
 	main(sys.argv)
